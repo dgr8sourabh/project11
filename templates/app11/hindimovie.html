@@ -1,0 +1,27 @@
+{% load staticfiles %}
+
+<html>
+<head><title>NETFLIX</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<center><h1 style="background-color: dodgerblue"><u>WELCOME TO NETFLIX</u></h1></center><br><br>
+<center>
+    <a href="{% url 'trailor' %}?id=10">
+        <img src="{% static 'images/10.jpg' %}" width="150" height="250"></a>
+    <a href="{% url 'trailor' %}?id=7">
+        <img src="{% static 'images/7.jpg' %}" width="150" height="250"></a>
+    <a href="{% url 'trailor' %}?id=8">
+        <img src="{% static 'images/8.jpg' %}" width="150" height="250"></a>
+    <a href="{% url 'trailor' %}?id=9">
+        <img src="{% static 'images/9.jpg' %}" width="150" height="250"></a>
+    <a href="{% url 'trailor' %}?id=6">
+        <img src="{% static 'images/6.jpg' %}"width="150" height="250"></a>
+</center>
+</body>
+</html>
